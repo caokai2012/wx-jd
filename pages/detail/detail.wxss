@@ -1,0 +1,53 @@
+/* pages/detail/detail.wxss */
+page{
+  background: #eee;
+}
+.goodsinfo{
+  background: #fff;
+}
+.price{
+  color: #f00;
+}
+
+.detial_bottom{
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: #fff;
+}
+.cart_btn{
+  position: absolute;
+  width: 28%;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-weight: bolder;
+}
+.addToCart{
+  right: 28%;
+  background: #ffa600;
+}
+.buyGoods{
+  right: 0;
+  background: #f00;
+}
+.cart_info{
+  float: left;
+  width: 44%;
+  height: 50px;
+  font-size: 10px;
+  text-align: center;
+}
+.cart_info_item{
+  display: flex;
+  justify-content: space-around;
+}
+.cart_info_item > view{
+  display: flex;
+  flex-direction: column;
+}
+.cart_info_item > view > image{
+  width: 32px;
+  height: 32px;
+}

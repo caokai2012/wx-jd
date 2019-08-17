@@ -1,0 +1,35 @@
+<!--pages/cart/cart.wxml-->
+<view class="cart">
+  <form class="form">
+      <view class="cart_form" wx:for="{{goodsList}}" wx:key="{{item.goods_id}}">
+        <view class="cart_form_item">
+            <checkbox bindtap="checkboxChange" 
+            data-index="{{index}}" checked="{{item.checked}}"></checkbox>
+          <image class="img" src="{{item.goods_img_src}}"></image>
+          <text class="cart_name">{{item.goods_name}}</text>
+        </view>
+        <view class="cart_option" capture-bind:touchstart='btnClick' data-index="{{index}}">
+          <text class="goods_price">￥{{item.goods_price}}</text>
+          <image data-type="jian" src="/images/tabbar/jianGoods.png" class="cart_btn cart_jian"></image>
+          <text class="cart_btn cart_num">{{item.goods_num}}</text>
+          <image data-type="jia" src="/images/tabbar/jiaGoods.png" class="cart_btn cart_jian"></image>
+          <button data-type="del" class="del_goods" type="warn" size="mini">删除</button>
+        </view>
+      </view>
+    
+    <!-- 底部的结算  -->
+    <view class="cart_bottom">
+    <checkbox-group bindchange="checkAll" data-checked="{{isAllChecked}}">
+      <label class="checkbox">
+        <checkbox checked="{{isAllChecked}}" ></checkbox>
+        全选
+      </label>
+      </checkbox-group>
+      <view class="cart_total_price">
+        总计：
+        <text class="cart_zongji">￥{{total}} </text>
+        <view class="cart_result">去结算</view>
+      </view>
+    </view>
+  </form>
+</view>

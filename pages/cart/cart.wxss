@@ -1,0 +1,117 @@
+/* pages/cart/cart.wxss */
+
+page {
+  background: #f6f6f6;
+}
+
+.cart {
+  margin-bottom: 55px;
+}
+
+.cart_form {
+  margin: 2px auto;
+  height: 90px;
+  width: 95%;
+  background: #fff;
+}
+
+.cart_form_item {
+  height: 50px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart_name {
+  margin: 5px;
+  box-sizing: border-box;
+  height: 30px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  color: #232326;
+  line-height: 16px;
+  padding: 0 4px;
+}
+
+.img {
+  width: 200rpx;
+  height: 50px;
+}
+
+.goods_price {
+  margin-right: 10px;
+  color: #f00;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.cart_option {
+  margin-top: 10rpx;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.cart_btn {
+  margin: 0 2rpx;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: #f6f6f6;
+}
+
+.del_goods {
+  margin-left: 6px;
+}
+
+/* 底部的结算的部分 */
+
+.cart_bottom {
+  margin-bottom: 4rpx;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.checkbox {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.cart_total_price {
+  width: 78%;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart_zongji {
+  margin-right: 8rpx;
+  color: #f00;
+  font-weight: bolder;
+}
+
+.cart_result {
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+  background: #f00;
+  color: #fff;
+  font-weight: bolder;
+}

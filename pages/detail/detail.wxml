@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <view class="goodsinfo">
+     <image src="{{goodsDetail.goods_img_src}}"></image>
+    <view> {{goodsDetail.goods_name}} </view>
+    <text class="price"> ￥{{goodsDetail.goods_price}} </text>
+  </view>
+</view>
+<view class="detial_bottom">
+  <view class="cart_info">
+    <view class="cart_info_item">
+      <view>
+        <image src="/images/tabbar/lianxikefu.png"></image>
+        联系客服
+      </view>
+      <view>
+         <image src="/images/tabbar/shop.png"></image>
+         <text>进店</text>
+      </view>
+      <view>
+         <image src="/images/tabbar/addCart.png"></image>
+          <text>购物车</text>
+      </view>
+    </view>
+  </view>
+  <view class="addToCart cart_btn" bindtap="addToCart">加入购物车</view>
+  <view class="buyGoods cart_btn" bindtap="buyGoods">立即购买</view>
+</view>

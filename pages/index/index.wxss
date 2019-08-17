@@ -1,0 +1,142 @@
+/**index.wxss**/
+ .index{
+   
+ }
+
+ .index_ad{
+   display: flex;
+   width: 100%;
+   height: 80rpx;
+   align-items: center;
+   justify-content: space-between;
+   color: #fff;
+   background: #000;
+   font-size: 12px;
+ }
+ .index_ad .logo{
+   width: 55rpx;
+   height: 55rpx;
+ }
+ .index_ad .clear{
+   margin-left: 10rpx;
+   width: 40rpx;
+   height: 40rpx;
+ }
+
+ .index_ad .index_open{
+   width: 24%;
+   height: 80rpx;
+   background: #f00;
+   text-align: center;
+   line-height: 80rpx;
+ }
+ .index_ad .index_tips{
+   width: 54%;
+   text-align: center;
+ }
+
+ /*  轮播图 */
+ .swiper_banner swiper{
+   height: 310rpx;
+   width: 100%;
+ }
+ .swiper_banner image{
+   width: 100%;
+   height: 310rpx;
+ }
+ .index_quick_nav{
+   height: 330rpx;
+   border-radius: 20rpx 20rpx 0 0;
+ }
+ .quick_item{
+   width: 100%;
+   height: 320rpx;
+ } 
+ .quick_con{
+   width: 100%;
+   height: 320rpx;
+   display: flex;
+   flex-direction: row !important;
+   flex-wrap: wrap;
+ }
+
+ .quick_list{
+   width: 20%;
+   height: 150rpx;
+   display: flex;
+   flex-direction: column;
+   font-size: 12px;
+   text-align: center;
+ }
+ .quick_list image{
+   margin: 10rpx auto 0;
+   width: 100rpx;
+   height: 110rpx;
+ }
+ /* 间隔  */
+ .index_jiange{
+   height: 24rpx;
+   background: #f6f6f6;
+ }
+ /* 推荐  */
+ .index_tuijian image{
+   height: 70rpx;
+   /* border: 1px red solid; */
+ }
+ /* 页面的主要区域 */
+ .index_content{
+   background: #f6f6f6;
+ }
+ .index_list{
+   margin: 0 auto;
+   width: 95%;
+   background: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background: #f6f6f6;
+ }
+ .index_list_item{
+   margin: 0rpx 0 15rpx;
+   width: 49%;
+   height: 520rpx;
+   font-size: 12px;
+   background: #fff;
+ }
+ .index_list_item image{
+   width: 100%;
+   height: 350rpx;
+ }
+ .index_list_desc{
+   box-sizing: border-box;
+    height: 31px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    color: #232326;
+    margin-top: 5px;
+    line-height: 16px;
+    margin-bottom: 3px;
+    padding: 0 4px;
+ }
+
+ .index_goods_price{
+   color: #f00;
+ }
+ .index_goods_tags{
+   margin: 0 5rpx;
+   padding: 4rpx;
+   border: 1px red solid;
+   color: #f00;
+ }
+ .index_list_select{
+   float: right;
+   margin: 0 5rpx;
+   padding: 4rpx;
+   border: 1px #e5e5e5 solid;
+   color: #959595;
+ }

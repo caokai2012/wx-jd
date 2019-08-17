@@ -1,0 +1,69 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="index_ad" hidden="{{isShow}}">
+    <image bindtap="closeTips" class="clear" src="/images/tabbar/close.png"></image>
+    <image class="logo" src="/images/logo.png"></image>
+    <view class="index_tips">打开京东App，购物更轻松</view>
+    <view class="index_open">立即打开</view>
+  </view>
+  <!-- 轮播图1  -->
+  <view class="swiper_banner">
+    <swiper indicator-dots autoplay
+      circular
+      indicator-active-color="#fff"
+    >
+      <swiper-item wx:for="{{bannerList}}" wx:key="*this">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 轮播图2  -->
+  <view class="index_quick_nav">
+    <swiper indicator-dots circular >
+      <swiper-item class="quick_item">
+        <view class="quick_con">
+          <view class="quick_list" wx:for="{{quickList.page1}}" wx:key="*this">
+            <image src="{{item.url}}"></image>
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </swiper-item>
+       <swiper-item class="quick_item">
+        <view class="quick_con">
+          <view class="quick_list" wx:for="{{quickList.page2}}" wx:key="*this">
+            <image src="{{item.url}}"></image>
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="index_jiange"></view>
+  <!-- 主要的展示区域  -->
+  <view class="index_tuijian">
+    <image src="/images/tuijian.png"></image>
+  </view>
+  <view class="index_content">
+    <view class="index_list">
+      <view class="index_list_item" 
+        bindtap="getGoodInfo"
+        wx:for="{{goodList}}" 
+        wx:key="{{item.goods_id}}"
+        data-goods_id="{{item.goods_id}}"
+      >
+        <image src="{{item.goods_img_src}}"></image>
+        <view class="index_list_desc">{{item.goods_name}}</view>
+        <view class="index_list_price">
+          <text class="index_goods_price">￥{{item.goods_price}}</text>
+          <text class="index_goods_tags"
+            wx:for="{{item.goods_tags}}" 
+            wx:for-item="it"
+            wx:for-index="ind"
+            wx:key="{{it}}"
+           >{{it}}</text>
+          <text class="index_list_select">看相似</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>  
